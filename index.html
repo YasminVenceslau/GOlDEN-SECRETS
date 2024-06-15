@@ -6,29 +6,37 @@
     <title>Golden Secrets</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
     <header>
         <div class="container">
 
             <div class="container2">
-                <ul >
+                <ul class="container2" >
+                    <li>
+                        <img src="imagens/brasil.png" alt="">
+                    </li>
+                    
                     <li>
                         <img src="imagens/ask.png" alt=" Sobre a Loja " title=" Sobre a Loja">
                         <ul class="escondido">
-                            <li>Atendimento ao cliente
-                                
-
+                            <li>
+                                Atendimento ao cliente
                             </li>
-                            <li>Serviços</li>
+                            <li>
+                                Serviços
+                            </li>
                         </ul>
+                    </li>
 
-                        
+                    
             </div>
 
             <h1>G o l d e n - S e c r e t s</h1>
     
-            <div class="container3">
+            <div class="container2">
                 <div class="barra escondido "><input type="search" name="" id=""></div>
                 <button type="button"><img src="imagens/procurar.png" alt="Busque" title="Busque"></button>
                 
@@ -40,7 +48,7 @@
                 
                 </ul>
                 
-                        </div>
+                </div>
             </div>
         <nav >
             <menu>
@@ -60,7 +68,7 @@
                             <li>Femininos</li>
                             <li>Masculinos</li>
                             <li>Unissex</li>
-                            <li>Kits</li>
+                            
                         </ul>
                     </li>
                     <li>
@@ -87,8 +95,27 @@
             </menu>
         </nav>
     </header>
-    <div class="carrosel">
-
+    <div id="carrosel">
+        <img src="imagens/3.png" alt="Desconto">
+        <img src="imagens/1.png" alt="Organic">
+        <img src="imagens/2.png" alt="Healthy">
     </div>
+
+            <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+            
+            <script>
+                $(document).ready(function(){
+                    $('#carrosel').slick({
+                        autoplay : true,
+                        dots: true,
+                        speed: 50,
+                        
+                    })
+                })
+                
+            </script>
 </body>
 </html>

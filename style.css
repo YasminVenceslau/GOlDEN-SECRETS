@@ -23,7 +23,7 @@
 header .container{
     
     max-width:  100%;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.465);
 }
 
 header .container{
@@ -37,7 +37,8 @@ h1{
     font-family: Golden;
 }
 
-header .container3{
+
+header .container2{
     display: flex;
     align-items: center;
     justify-content: space-between;

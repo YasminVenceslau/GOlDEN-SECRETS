@@ -1,4 +1,8 @@
 
+html,body{
+    overflow-x: hidden;
+}
+
 
 @font-face {
     font-family:Golden ;
@@ -11,6 +15,7 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+    background-color: aliceblue;
 }
 
 .container{
@@ -65,4 +70,50 @@ button {
 
 menu .container{
     padding: 10px;
+    width: 50%;
+    border-bottom: none;
+}
+
+.giro{
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.Kits {
+    display: flex;
+  
+    padding:10px 0;
+}
+
+section h2{
+    text-transform: uppercase;
+    padding: 2em 0 10px 20px;
+}
+section h4{
+    font-weight: lighter; 
+    padding: 0  0  24px 20px;
+}
+
+section li {
+    padding: 0 9px 10px 20px;
+}
+
+section h5{
+    padding: 10px 0;
+}
+
+.desconto{
+color: dimgray;
+text-decoration: line-through;
+}
+
+.descontado{
+    color: brown;
+}
+
+li button{
+    background-color: black;
+    color: aliceblue;
+
+    display: none;
 }

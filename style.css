@@ -22,7 +22,7 @@ html,body{
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
-    padding: 1em;
+    padding: 0 1em;
 }
 
 header .container{
@@ -59,9 +59,40 @@ li{
     padding: 0 16px;
 }
 
+.cabeçalho{
+    border-bottom: 4px solid transparent ;
+    position: relative;
+    cursor: pointer;
+}
+
+
 .escondido{
     display: none;
+    position: absolute;
+    left: 0;
+    
+    height: 300px;
+    top: 170%;
+    background-color: rgb(255, 255, 255);
+    
+    z-index: 1;
 }
+
+.cabeçalho:hover ul {
+    display: flex;
+}
+
+
+.escondido img{
+    max-width: 400px;
+    
+}
+
+.escondido li{
+    display: block;
+    padding: 8px;
+}
+
 
 button {
     border: none;
@@ -286,3 +317,15 @@ form button{
 .foot a:hover{
     color: aliceblue;
 }
+
+main{
+    max-width: 1280px;
+    
+    background-color: white;
+    
+    margin: auto;
+   
+}
+
+/* cabeçalho */
+

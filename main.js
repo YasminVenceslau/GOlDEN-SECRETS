@@ -15,8 +15,16 @@ $(document).ready(function(){
     })
 
 
-   function setupHandlers(buttonId, contentClass){
-    $(`#${buttonId}`).click(function(){
+    $('.giro').on('mouseenter' , function(){
+        $(this).siblings('div').find('button').removeAttr('id')
+        $('.giro').mouseleave(function(){
+            $('.butao').attr('id' , 'compra')
+        })
+    })
+
+
+    function setupHandlers(buttonId, contentClass){
+    $(`#${buttonId}`).mouseenter(function(){
         $(`.${contentClass}`).removeAttr('id').slideDown()
     });
 
@@ -26,12 +34,15 @@ $(document).ready(function(){
         }, 200)
     })
 
-   }
+    }
 
     setupHandlers('make', 'make');
     setupHandlers('perf', 'perf');
     setupHandlers('hair', 'hair');
-   setupHandlers('golden', 'golden');
+    setupHandlers('golden', 'golden');
     
+
+    
+
 
 })

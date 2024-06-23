@@ -85,6 +85,10 @@ li{
     z-index: 1;
 }
 
+.menu2 ul{
+    background-color: white;
+}
+
 /* .cabeçalho:hover ul {
     display: flex;
 } */
@@ -185,26 +189,27 @@ text-decoration: line-through;
     color: brown;
 }
 
-.butao{
-    position: absolute;
-}
 
 
-.compra{
-   
-    background-color: black;
-    color: aliceblue;
+
+#compra{
+    
     display: none;
 
-    
-    position: absolute;
-  
-    left: 50%;
-    top: 20%;
-    
-    transform: translate(80%, -290%);
-
     }
+
+
+    .butao{
+      
+      
+        left: 50%;
+        top: 20%;
+        
+        transform: translate(60%, -390%);
+    
+        background-color: black;
+        color: aliceblue;
+    }    
 
 
 li button{

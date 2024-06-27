@@ -91,7 +91,7 @@ $(document).ready(function(){
     $('.lista-itens a').click(function(){
         const destino = $('#sobre');
 
-        const nomeid = $(this).parent().find('h6').text();
+        const nomeid = $(this).parent().find('h6 a').text();
         $('#text').val(nomeid)
 
 

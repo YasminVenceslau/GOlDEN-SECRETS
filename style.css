@@ -74,10 +74,7 @@ li{
     cursor: pointer;
 }
 
-#carrosel{
-    position: sticky;
-    top: 0;
-}
+
 
 .atras button{
     font-size: 1.4em;
@@ -424,4 +421,61 @@ main{
     color: rgba(0, 0, 0, 0.228);
     padding-bottom: 10px;
 
+}
+
+
+@media screen and (max-width:640px) {
+    
+    
+
+    header .container2{ /* cabeçalho */
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    } 
+    h1{
+        font-family: Golden;
+        font-size: 15px;
+        
+    }
+    
+    .container img{
+        max-width: 20px;
+    }
+    
+    .container li{
+        list-style: none;
+        padding: 5px 7px;
+    }
+
+    .giro2{
+        padding: 0 20px ;
+        margin: 0 10px;
+  
+    }
+
+    
+   
+    .Kits {
+       display: block;
+       align-items: center;
+    }
+    
+    .item1{
+        align-items: center;
+    }
+
+    .looks{
+        display: inline;
+        margin: auto;
+
+    }
+    
+}
+
+
+.slick-slide{
+    
+    padding: 0 50px;
 }

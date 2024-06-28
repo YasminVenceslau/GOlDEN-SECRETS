@@ -1,18 +1,58 @@
 $(document).ready(function(){
     $('#carrosel').slick({ // faz o carrosel na sessão carrosel
-        
-        dots: true, //adiciona pontos abaixo da imagem
+        slidesToShow: 1,
+        dots: false, //adiciona pontos abaixo da imagem
         speed: 50,  // indica a velocidade do giro 
-        Infinite: false, //  impede que o carrosel reinicie
+        Infinite: true, //  impede que o carrosel reinicie
         arrows: false, // remove as setas
+        variableWidth: true,
+        centerMode: true,
+        
+        
+        responsive: [
+            {
+            breakpoint: 677,
+            settings:{
+                slideToShow: 1,
+                dots: false,
+                
+            }
+                
+            
+
+        }
+        ]
         
     })
 
     $('.giro').slick({ // faz o carrosel na sessão giro 
         slideToShow: 1, //mostra uma imagem por vez 
         arrows: false, // remove as setas
+       
 
     })
+
+    function initializeSlick(){ //quando a larguira da pg for menor que 640px
+        if ($(window).width() <= 640){
+            if (!$('.giro2').hasClass('slick-initialized')){
+                $('.giro2').slick({
+                    dots:false,
+                    speed: 500,
+                    infinite: false,
+                    slidesToShow: 3 ,
+                    slidesToScroll: 1,
+                    arrows: false,
+
+                });
+            }
+        }else {
+            if($('giro2').hasClass('slick-initialized')){
+                $('.giro2').slick('unslick')
+                    } 
+        }
+    } 
+
+initializeSlick()
 
 
     $('.buy').on('mouseenter' , function(){

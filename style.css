@@ -426,7 +426,9 @@ main{
 
 @media screen and (max-width:640px) {
     
-    
+    html, body {
+        overflow-x: hidden;
+       }
 
     header .container2{ /* cabeçalho */
         display: grid;
@@ -452,25 +454,99 @@ main{
     .giro2{
         padding: 0 20px ;
         margin: 0 10px;
-  
+        
     }
 
+    main{
+        max-width: 370px;
+        padding: 5px;
+    }
     
-   
     .Kits {
-       display: block;
-       align-items: center;
+        display: inline;
+        align-items: center;
+        text-align: center;
+        max-width: 370;
+        padding: 5px;
     }
     
-    .item1{
-        align-items: center;
+
+    #compra{ /* bottão  */
+        display: block;
     }
 
-    .looks{
+    .butao{
+        align-items: center;
+        transform: none;
+        
+    }  
+    
+    .Kits p{
+        padding-bottom: 10px;
+    }
+
+    .Kits div{
+        padding-top: 10px;
+    }
+
+    .atras{
+        padding-top: 10px;
+        
+       
+        padding: 0.6em 0.8em;
+        
+        
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+        box-shadow: 2px 2px 3px #000000b4;
+        cursor: pointer;
+    }
+
+   .atras button {
+        margin: auto;
+     
+    }
+
+    .looks{ /* lado a e b */
         display: inline;
         margin: auto;
+        
 
     }
+
+    .meio1{
+        max-width: 380px;
+    }
+
+    footer{
+        display:block ;
+        justify-content: space-between;
+       
+        
+    
+    }
+
+    footer img{
+        max-height: 350px;
+    }
+    
+    .sobre{
+        color: aliceblue;
+        padding: 20px;
+        text-align: justify;
+        max-width: 380px;
+
+        
+    
+    }
+    
+    .container-flex li{
+        display: flex;
+        padding: 60px 0; 
+        max-height: 0px;
+        align-items: center;
+    } 
     
 }
 

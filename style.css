@@ -457,10 +457,6 @@ main{
         
     }
 
-    main{
-        max-width: 370px;
-        padding: 5px;
-    }
     
     .Kits {
         display: inline;
@@ -508,15 +504,35 @@ main{
      
     }
 
+    main{
+        padding: 50px 0;
+    }
+
     .looks{ /* lado a e b */
         display: inline;
         margin: auto;
-        
 
     }
 
+    .looks div{
+        padding: 0;
+        
+    }
+
+    .ladoa,.ladob{
+      
+        margin: auto;
+    }
+
+    .ladoa img,
+    .ladob img{
+        padding: 10px;
+        margin: auto;
+        width:190px;
+    }
+
     .meio1{
-        max-width: 380px;
+        max-width: 370px;
     }
 
     footer{

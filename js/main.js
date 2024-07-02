@@ -28,7 +28,8 @@ $(document).ready(function(){
     $('.giro').slick({ // faz o carrosel na sessão giro 
         slideToShow: 1, //mostra uma imagem por vez 
         arrows: false, // remove as setas
-       
+        centerMode: true,
+        
 
     })
 

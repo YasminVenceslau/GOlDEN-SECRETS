@@ -74,7 +74,9 @@ li{
     cursor: pointer;
 }
 
-
+.container.giro2{
+    padding: 10px 0;
+}
 
 .atras button{
     font-size: 1.4em;
@@ -430,9 +432,15 @@ main{
 
 @media screen and (max-width:450px) {
     
-    html, body {
-        overflow-x: hidden;
-       }
+    
+
+       .cal{
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1;
+       background-color: white;
+    }
 
     header .container2{ /* cabeçalho */
         display: grid;
@@ -633,11 +641,17 @@ main{
 }
 
 
-@media screen and (min-width:451px) {
+@media screen and (min-width:451px) and (max-width: 641px) {
     
-    html, body {
-        overflow-x: hidden;
-       }
+    
+
+    .cal{
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1;
+       background-color: white;
+    }
 
     header .container2{ /* cabeçalho */
         display: grid;
@@ -668,7 +682,7 @@ main{
 
     main{
         margin: auto;
-        max-width: 640px;
+        max-width: 400px;
     }
 
 
@@ -763,7 +777,13 @@ main{
         justify-content: center;
     }
 
-   
+   .pausa h2{
+    font-size: 50px;
+    padding: 50px 0 16px 0;
+   }
+   .pausa{
+    padding: 10px;
+   }
 
     .seguido img{
         width: 80%;
@@ -781,7 +801,7 @@ main{
 
     .looks{
         width: 100%;
-    display: block;
+    display: grid;
     margin: 0 auto;
     }
 
@@ -843,7 +863,152 @@ main{
     
 }
 
-@media screen and (min-widht: 641px) and (max-widht: 1023px){
+@media screen and (min-width:641px) and (max-width: 1024px) {
+    .cal{
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: white;
+    }
+
+    .container h1{
+        font-size: 20px;
+    }
+    
+    .Kits{
+        
+        max-width: 640px;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+
+        
+        text-align: center;
+        
+        
+    }
+
+
+    #compra{ /* bottão  */
+        display: block;
+    }
+
+    .butao{
+        align-items: center;
+        transform: none;
+        
+    }  
+    
+    .atras{
+        padding-top: 10px;
+        
+       
+        padding: 0.6em 0.8em;
+        
+        
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+        box-shadow: 2px 2px 3px #000000b4;
+        cursor: pointer;
+    }
+
+   .atras button {
+        margin: auto;
+     
+    }
+
+    .looks{
+        display: grid;
+    }
+
+    .seguido img{
+        width: 80%;
+    display: block;
+    margin: 0 auto;
+    
+    }
+
+    footer{
+        display: grid;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    footer img, .sobre{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        max-height: 350px;
+    }
+    
+    .sobre{
+        color: aliceblue;
+        padding: 20px;
+        text-align: justify;
+        max-width: 380px;
+
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+
+
+    .Kits{
+        
+        max-width: 1024px;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+
+        
+        text-align: center;
+        
+        
+    }
+
+     #compra{ /* bottão  */
+        display: block;
+    }
+
+    .butao{
+        align-items: center;
+        transform: none;
+        
+    }  
+    
+    .atras{
+        padding-top: 10px;
+        
+       
+        padding: 0.6em 0.8em;
+        
+        
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+        box-shadow: 2px 2px 3px #000000b4;
+        cursor: pointer;
+    }
+
+   .atras button {
+        margin: auto;
+     
+    }
+
+    img{
+        
+    display: block;
+    margin: 0 auto;
+    
+    }
     
 }
 

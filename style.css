@@ -466,6 +466,14 @@ main{
         padding: 5px;
     }
     
+    section li{
+        padding: 0 20px 10px ;
+    }
+
+    section h2 {
+        text-transform: uppercase;
+        padding: 10px 20px 10px 10px;
+    }
 
     #compra{ /* bottão  */
         display: block;
@@ -553,8 +561,10 @@ main{
         text-align: justify;
         max-width: 380px;
 
-        
-    
+    }
+
+   .final h1{
+       font-size: 21px;
     }
     
     .container-flex li{
